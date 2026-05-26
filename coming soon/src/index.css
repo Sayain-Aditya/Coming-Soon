@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+body {
+	@apply bg-black text-white min-h-screen;
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* Neon green accent color */
+.neon {
+	color: #39FF14;
+}
+
+.bg-neon {
+	background-color: #39FF14;
+}
+
+/* Animated background styles */
+.animated-bg {
+	position: fixed;
+	inset: 0;
+	z-index: 0;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.ring {
+	position: absolute;
+	border-radius: 50%;
+	border: 2px solid #222;
+	box-shadow: 0 0 40px 10px #39FF1444;
+	opacity: 0.5;
+	animation: rotate 24s linear infinite;
+}
+
+.ring.neon {
+	border-color: #39FF14;
+	opacity: 0.3;
+	box-shadow: 0 0 80px 10px #39FF1499;
+}
+
+@keyframes rotate {
+	0% { transform: rotate(0deg) scale(1); }
+	100% { transform: rotate(360deg) scale(1.05); }
+}
