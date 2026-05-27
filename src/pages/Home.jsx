@@ -14,90 +14,62 @@ export default function Home() {
         playsInline
         aria-hidden="true"
       />
-      <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
-      <div className="fixed inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(57,255,20,0.18),transparent_32%),linear-gradient(180deg,rgba(0,0,0,0.15),rgba(0,0,0,0.82))]" aria-hidden="true" />
+      <div className="fixed inset-0 bg-black/62" aria-hidden="true" />
+      <div
+        className="fixed inset-0 bg-[radial-gradient(circle_at_78%_18%,rgba(255,255,255,0.22),transparent_28%),linear-gradient(90deg,rgba(0,0,0,0.94),rgba(0,0,0,0.52),rgba(0,0,0,0.86))]"
+        aria-hidden="true"
+      />
 
       <div className="relative z-10 flex h-screen flex-col">
-        <header className="flex shrink-0 items-center justify-between px-5 py-4 md:px-10">
+        <header className="flex h-20 shrink-0 items-center px-5 md:px-10">
           <a
             href="#"
-            className="flex items-center border border-[#39FF14]/50 bg-black/80 px-3 py-2 shadow-[0_0_18px_rgba(57,255,20,0.22)] backdrop-blur-sm"
+            className="flex h-12 w-[190px] items-center border border-white/20 bg-black/85 px-3 shadow-[0_16px_40px_rgba(0,0,0,0.55)] backdrop-blur-sm sm:w-[240px]"
             aria-label="Brand Cures home"
           >
             <img
               src={brandLogo}
               alt="Brand Cures logo"
-              className="h-11 w-auto max-w-[230px] object-contain"
+              className="h-full w-full object-contain"
             />
-          </a>
-          <a
-            href="#notify"
-            className="border border-[#39FF14]/60 bg-black/40 px-4 py-2 text-xs font-black uppercase tracking-[0.2em] text-[#39FF14] backdrop-blur-sm transition-colors hover:bg-[#39FF14] hover:text-black"
-          >
-            Early Access
           </a>
         </header>
 
-        <main className="flex min-h-0 flex-1 items-center justify-center px-5 py-3">
-          <section className="relative w-full max-w-4xl">
-            <div className="absolute -left-3 -top-3 h-14 w-14 border-l-2 border-t-2 border-[#39FF14]" aria-hidden="true" />
-            <div className="absolute -bottom-3 -right-3 h-14 w-14 border-b-2 border-r-2 border-[#39FF14]" aria-hidden="true" />
-
-            <div className="border border-white/15 bg-black/72 p-5 text-center shadow-[0_30px_100px_rgba(0,0,0,0.8)] backdrop-blur-md md:p-8 lg:p-9">
-              <div className="mx-auto mb-4 flex w-fit items-center gap-3 text-[10px] font-black uppercase tracking-[0.3em] text-[#39FF14] sm:text-xs">
-                <span className="h-px w-8 bg-[#39FF14] shadow-[0_0_16px_rgba(57,255,20,0.9)] sm:w-12" />
-                Launch sequence
-                <span className="h-px w-8 bg-[#39FF14] shadow-[0_0_16px_rgba(57,255,20,0.9)] sm:w-12" />
+        <main className="flex min-h-0 flex-1 items-center px-5 py-2 md:px-10">
+          <section className="mx-auto w-full max-w-5xl">
+            <div className="border border-white/15 bg-black/70 p-6 text-center shadow-[0_30px_90px_rgba(0,0,0,0.7)] backdrop-blur-md md:p-9 lg:p-10">
+              <div className="mb-4 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.3em] text-zinc-200 sm:text-xs">
+                <span className="h-px w-10 bg-white" />
+                Curing the problem
+                <span className="h-px w-10 bg-white" />
               </div>
 
-              <h1 className="text-4xl font-black uppercase leading-[0.9] tracking-normal text-white drop-shadow-[0_8px_26px_rgba(0,0,0,0.95)] sm:text-5xl md:text-7xl lg:text-8xl">
+              <h1 className="mx-auto max-w-4xl text-4xl font-black uppercase leading-[0.9] tracking-normal text-white drop-shadow-[0_8px_24px_rgba(0,0,0,0.95)] sm:text-5xl md:text-7xl xl:text-8xl">
                 Brand Cures
-                <span className="block text-[#39FF14] drop-shadow-[0_0_26px_rgba(57,255,20,0.65)]">Almost Here</span>
+                <span className="block text-transparent [-webkit-text-stroke:1.5px_#fff] md:[-webkit-text-stroke:2px_#fff]">
+                  Coming Soon
+                </span>
               </h1>
 
-              <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-zinc-100 md:text-base">
-                We are preparing a smarter digital experience for brands that want sharper strategy, creative media, and cleaner growth workflows.
+              <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-zinc-200 md:text-base">
+                A sharp new digital home for strategy, media, creative direction, and brand growth is getting ready to launch.
               </p>
 
-              <form
-                id="notify"
-                className="mx-auto mt-5 grid w-full max-w-2xl gap-3 border border-white/10 bg-white/[0.04] p-2.5 sm:grid-cols-[1fr_auto]"
-              >
-                <label htmlFor="email" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  id="email"
-                  type="email"
-                  required
-                  placeholder="Enter your email"
-                  className="min-h-11 border border-white/15 bg-black px-4 text-sm text-white outline-none placeholder:text-zinc-500 focus:border-[#39FF14]"
-                />
-                <button
-                  type="submit"
-                  className="min-h-11 bg-[#39FF14] px-7 text-sm font-black uppercase tracking-[0.18em] text-black transition-colors hover:bg-white"
-                >
-                  Notify Me
-                </button>
-              </form>
-
-              <label
-                htmlFor="subscribe"
-                className="mx-auto mt-3 flex max-w-2xl items-start justify-center gap-3 text-left text-xs leading-5 text-zinc-300"
-              >
-                <input id="subscribe" type="checkbox" required className="mt-1 accent-[#39FF14]" />
-                <span>Send me launch updates and newsletter emails.</span>
-              </label>
+              <div className="mt-6 flex flex-wrap justify-center gap-2 text-[10px] font-black uppercase tracking-[0.18em] text-black">
+                <span className="bg-white px-3 py-2">Brand Strategy</span>
+                <span className="bg-white px-3 py-2">Media</span>
+                <span className="bg-white px-3 py-2">Growth</span>
+              </div>
             </div>
           </section>
         </main>
 
-        <footer className="flex shrink-0 flex-col items-center justify-between gap-2 border-t border-white/10 bg-black/80 px-5 py-3 text-xs text-zinc-300 md:flex-row md:px-10">
+        <footer className="flex h-11 shrink-0 items-center justify-between border-t border-white/10 bg-black/85 px-5 text-xs text-zinc-300 md:px-10">
           <div className="flex gap-4">
-            <a href="#" className="underline decoration-white/30 underline-offset-4 hover:text-[#39FF14]">
+            <a href="#" className="underline decoration-white/30 underline-offset-4 hover:text-white">
               Privacy Policy
             </a>
-            <a href="#" className="underline decoration-white/30 underline-offset-4 hover:text-[#39FF14]">
+            <a href="#" className="underline decoration-white/30 underline-offset-4 hover:text-white">
               Accessibility Statement
             </a>
           </div>

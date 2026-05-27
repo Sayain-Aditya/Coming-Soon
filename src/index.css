@@ -14,7 +14,7 @@ body,
 
 * {
 	scrollbar-width: thin;
-	scrollbar-color: #39FF14 #050505;
+	scrollbar-color: #ffffff #050505;
 }
 
 ::-webkit-scrollbar {
@@ -26,14 +26,14 @@ body,
 }
 
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(180deg, #39FF14, #1f8f0f);
+	background: linear-gradient(180deg, #ffffff, #8a8a8a);
 	border: 2px solid #050505;
 	border-radius: 999px;
-	box-shadow: 0 0 14px #39FF14;
+	box-shadow: 0 0 14px #ffffff66;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: linear-gradient(180deg, #ffffff, #39FF14);
+	background: linear-gradient(180deg, #ffffff, #d7d7d7);
 }
 
 /* Neon green accent color */
