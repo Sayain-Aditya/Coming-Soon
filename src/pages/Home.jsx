@@ -1,4 +1,5 @@
 import React from "react";
+import brandLogo from "../assets/brand cures logo.png";
 import videoBg from "../assets/200531-913040088_medium.mp4";
 
 export default function Home() {
@@ -20,9 +21,14 @@ export default function Home() {
         <header className="flex shrink-0 items-center justify-between px-5 py-4 md:px-10">
           <a
             href="#"
-            className="text-2xl font-black tracking-[0.3em] text-white drop-shadow-[0_0_18px_rgba(0,0,0,0.95)]"
+            className="flex items-center border border-[#39FF14]/50 bg-black/80 px-3 py-2 shadow-[0_0_18px_rgba(57,255,20,0.22)] backdrop-blur-sm"
+            aria-label="Brand Cures home"
           >
-            <span className="text-[#39FF14]">S</span>YNC
+            <img
+              src={brandLogo}
+              alt="Brand Cures logo"
+              className="h-11 w-auto max-w-[230px] object-contain"
+            />
           </a>
           <a
             href="#notify"
@@ -45,12 +51,12 @@ export default function Home() {
               </div>
 
               <h1 className="text-4xl font-black uppercase leading-[0.9] tracking-normal text-white drop-shadow-[0_8px_26px_rgba(0,0,0,0.95)] sm:text-5xl md:text-7xl lg:text-8xl">
-                Sync Is
+                Brand Cures
                 <span className="block text-[#39FF14] drop-shadow-[0_0_26px_rgba(57,255,20,0.65)]">Almost Here</span>
               </h1>
 
               <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-zinc-100 md:text-base">
-                We are shaping a focused space for AI updates, technology tools, and smarter digital workflows. Join the list before the first release.
+                We are preparing a smarter digital experience for brands that want sharper strategy, creative media, and cleaner growth workflows.
               </p>
 
               <form
@@ -95,7 +101,7 @@ export default function Home() {
               Accessibility Statement
             </a>
           </div>
-          <div>&copy; {new Date().getFullYear()} Sync. All rights reserved.</div>
+          <div>&copy; {new Date().getFullYear()} Brand Cures. All rights reserved.</div>
         </footer>
       </div>
     </div>
